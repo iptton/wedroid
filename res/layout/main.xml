@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="43dp">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  &lt;  "
+                android:id="@+id/btnBack"
+                android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  &gt;  "
+                android:id="@+id/btnForward" android:layout_gravity="left|center_vertical"
+                android:layout_toRightOf="@+id/btnBack" android:layout_alignParentTop="true"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="   x  "
+                android:id="@+id/btnRefreshAndStop"
+                android:layout_toRightOf="@+id/btnForward" android:layout_alignParentTop="true"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="  +  "
+                android:id="@+id/btnSettings" android:layout_gravity="right"
+                android:layout_alignParentRight="true" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <WebView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/webView" android:layout_gravity="center"/>
+</LinearLayout>
+
